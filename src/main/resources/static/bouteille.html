@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sépage qui compte ! </title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--    <link rel="stylesheet" href="css/commun.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="js/listBouteille.js"></script>
+    <link rel="stylesheet" href="css/commun.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand active">
+                <span class="glyphicon glyphicon-glass"></span>
+                <span class="glyphicon glyphicon-glass"></span>
+            </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse"
+                    data-target="#navbar-main">
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="bouteille.html">Liste des bouteilles</a></li>
+                <li><a href="ajoutBouteille.html">Ajouter une bouteille</a></li>
+                <li><a href="">Couleurs</a></li>
+                <li><a href="">Regions</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="bleu">Liste des bouteilles (<span id="nbFilms"></span>)</h1>
+
+
+    <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+            <th>Nom </th>
+            <th>Millesime </th>
+            <th>Petillant ?</th>
+            <th>Quantité</th>
+            <th>Couleur </th>
+            <th>Region</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody id="tbodyliste">
+        </tbody>
+
+    </table>
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <ul class="nav navbar-nav  navbar-foot">
+            <li class="pull-left"><a>© 2022 Copyright</a></li>
+            <li class="pull-right"><a>Formation M2i</a></li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
