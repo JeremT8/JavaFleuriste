@@ -26,5 +26,20 @@ public class RegionServiceImpl implements RegionService {
         return rDao.findById(id);
     }
 
+    @Override
+    public void supprimerRegion(int id) {
+        rDao.deleteById(id);
+    }
+
+    @Override
+    public void ajouterRegion(Region r) {
+        rDao.save(r);
+    }
+
+    @Override
+    public void modifierRegion(Region r) {
+        rDao.save(r);
+    }
+
 
 }

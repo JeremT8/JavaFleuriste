@@ -44,15 +44,15 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="bouteille.html">Liste des bouteilles</a></li>
                 <li class="active"><a href="ajoutBouteille.html">Ajouter une bouteille</a></li>
-                <li><a href="">Couleurs</a></li>
-                <li><a href="">Regions</a></li>
+                <li><a href="couleur.html">Couleurs</a></li>
+                <li><a href="region.html">Regions</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <h1 class="bleu">Ajout d'un film</h1>
+    <h1 class="bleu">Modification d'une bouteille</h1>
 
     <div class="alert alert-danger" id="errorFilm">
     </div>
@@ -63,13 +63,13 @@
             <div class="form-group">
                 <label for="nom" class="col-xs-2 control-label">Nom :</label>
                 <div class="col-xs-10">
-                    <input value="${bouteille.nom}" id="nom"  name="nom"  placeholder="Nom de la bouteille..."  class="form-control" />
+                    <input  id="nom"  name="nom"  placeholder="Nom de la bouteille..."  class="form-control" />
                 </div>
             </div>
             <div class="form-group">
                 <label for="millesime" class="col-xs-2 control-label">Millesime :</label>
                 <div class="col-xs-10">
-                    <input value="${bouteille.millesime}" id="millesime"  name="millesime"  placeholder="Millesime de la bouteille..."  class="form-control" />
+                    <input  id="millesime"  name="millesime"  placeholder="Millesime de la bouteille..."  class="form-control" />
                 </div>
             </div>
             <div class="form-group">
@@ -84,7 +84,7 @@
             <div class="form-group">
                 <label for="quantite" class="col-xs-2 control-label">Quantité :</label>
                 <div class="col-xs-10">
-                    <input value="${bouteille.quantite}" id="quantite" name="quantite" type="number"  placeholder="Quantité ..."  class="form-control" />
+                    <input  id="quantite" name="quantite" type="number"  placeholder="Quantité ..."  class="form-control" />
                 </div>
             </div>
 

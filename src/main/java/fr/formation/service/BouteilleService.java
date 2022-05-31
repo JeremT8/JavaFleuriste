@@ -13,7 +13,7 @@ public interface BouteilleService {
 
     void ajouterBouteille(Bouteille b);
 
-    void supprimerBouteille(Bouteille b);
+    void supprimerBouteille(int id);
 
     void modifierBouteille(Bouteille b);
 }

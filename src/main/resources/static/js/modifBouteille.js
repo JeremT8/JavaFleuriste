@@ -1,11 +1,12 @@
 $(function() {
+    getBouteille(id);
     getRegions();
     getCouleur();
     $("#bEnvoyer").on ("click", envoyer);
 });
 
 
-function getBouquet(id) {
+function getBouteille(id) {
     $("#errorFilm").css("display", "none");
 
     $.get("http://localhost:8080/" + id, afficheBouteille());

@@ -30,8 +30,8 @@ public class BouteilleServiceImpl implements BouteilleService {
     }
 
     @Override
-    public void supprimerBouteille(Bouteille b) {
-        bDao.delete(b);
+    public void supprimerBouteille(int id) {
+        bDao.deleteById(id);
     }
 
     @Override

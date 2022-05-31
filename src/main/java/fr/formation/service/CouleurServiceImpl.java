@@ -24,4 +24,19 @@ public class CouleurServiceImpl implements CouleurService {
     public Optional<Couleur> getOneCouleurById(int id) {
         return cDao.findById(id);
     }
+
+    @Override
+    public void supprimerCouleur(int id) {
+        cDao.deleteById(id);
+    }
+
+    @Override
+    public void ajouterCouleur(Couleur c) {
+        cDao.save(c);
+    }
+
+    @Override
+    public void modifierCouleur(Couleur c) {
+        cDao.save(c);
+    }
 }

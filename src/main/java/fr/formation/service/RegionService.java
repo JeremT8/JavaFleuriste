@@ -1,5 +1,6 @@
 package fr.formation.service;
 
+import fr.formation.entity.Couleur;
 import fr.formation.entity.Region;
 
 import java.util.List;
@@ -11,4 +12,10 @@ public interface RegionService {
 
 
     Optional<Region> getRegionById(int id);
+
+    void supprimerRegion(int id);
+
+    void ajouterRegion(Region r);
+
+    void modifierRegion(Region r);
 }

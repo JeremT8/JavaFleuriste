@@ -36,5 +36,8 @@ public class BouteilleControllerApi {
         bs.modifierBouteille(b);
     }
 
-
+    @DeleteMapping("/{id}")
+    public void deleteBouteille(@RequestBody @PathVariable("id") int id) {
+        bs.supprimerBouteille(id);
+    }
 }

@@ -21,10 +21,11 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-<!--    <link rel="stylesheet" href="css/commun.css">-->
+    <!--    <link rel="stylesheet" href="css/commun.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="js/region.js"></script>
     <link rel="stylesheet" href="css/commun.css">
 </head>
 <body>
@@ -43,29 +44,34 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="bouteille.html">Liste des bouteilles</a></li>
                 <li><a href="ajoutBouteille.html">Ajouter une bouteille</a></li>
                 <li><a href="couleur.html">Couleurs</a></li>
-                <li><a href="region.html">Regions</a></li>
+                <li class="active"><a href="">Regions</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <div class="jumbotron">
-        <h1>
-            Bienvenue <small>dans notre application de cave a vin</small>
-        </h1>
-        <p>Vous allez pouvoir visualiser vos plus merveilleuses bouteilles,
-            mais aussi ajouter, modifier ou supprimer ces excellents breuvages.</p>
-        <p>Expérience enrichissante garantie.</p>
-        <p>
-            <a class="btn btn-primary btn-lg" role="button" href="bouteille.html">En
-                savoir plus ...</a>
-        </p>
-    </div>
+    <h1 class="bleu">Liste des couleurs (<span id="nbRegion"></span>)</h1>
+
+
+    <table class="table table-hover table-striped" id="myTable">
+        <thead>
+        <tr>
+            <th>Id </th>
+            <th>Nom </th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody id="tbodyliste">
+        </tbody>
+
+    </table>
+
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">

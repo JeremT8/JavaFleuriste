@@ -1,5 +1,9 @@
 // console.log("coucou");
 
+$(document).ready(function () {
+    $("#myTable").DataTable();
+})
+
 $(function() {
     getBouteille();
 });
@@ -41,4 +45,17 @@ function modifBouteille(id){
     window.location = "modifBouteille.html?id=" + id;
 }
 
-//
+
+function suppBouteille(id){
+    $.ajax({
+        type : 'delete',
+        url : 'http://localhost:8080/bouteille/' + id,
+        success : function(){
+            getBouteille();
+        }
+    })
+        .fail(function(){
+            $("#errorBouteille").css("display", "block");
+            $("#errorBouteille").html("Une erreur est survenue lors de la suppression");
+        })
+}

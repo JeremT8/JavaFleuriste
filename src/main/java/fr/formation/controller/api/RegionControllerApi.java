@@ -1,12 +1,10 @@
 package fr.formation.controller.api;
 
+import fr.formation.entity.Couleur;
 import fr.formation.entity.Region;
 import fr.formation.service.RegionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,4 +26,20 @@ public class RegionControllerApi {
         return rs.getRegionById(id);
     }
 
+    @PostMapping("/add")
+    public void addRegion(@RequestBody Region r) {
+        rs.ajouterRegion(r);
+    }
+
+
+    @PutMapping("/update")
+    public void updateRegion(@RequestBody Region r) {
+        rs.modifierRegion(r);
+    }
+
+
+    @DeleteMapping("/{id}")
+    public void deleteRegion(@RequestBody @PathVariable("id") int id) {
+        rs.supprimerRegion(id);
+    }
 }
